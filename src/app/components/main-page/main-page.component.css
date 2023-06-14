@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header{
+    align-self: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 75px 0;
+}
+
+button{
+    width: 250px;
+    align-self: center;
+    height: 50px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid #8E6CA3;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 60px;
+}
