@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700&display=swap'); */
 
 *{
     box-sizing: border-box;
 }
 
 body{
-    background-color:  #231942;
+    background-color: #231942;
     font-family: 'Judson', serif;
 }
 

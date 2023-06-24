@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700&display=swap");
+@import "../../../../src/styles.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #231942;
+}
+
+.header {
+  color: #ffffff;
+  align-self: center;
+  padding-top: 70px;
+}
+
+.name-header {
+  color: #ffffff;
+}
+
+.check-header {
+  color: #ffffff;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.checkboxes {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.form-check {
+  padding: 40px;
+}
+
+.submit-button {
+  width: 250px;
+  align-self: center;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid #8e6ca3;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.disabled-button {
+  cursor: not-allowed;
+  background-color: #baa3c8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #ffffff;
+}
+
+.submit-button {
+  cursor: not-allowed;
+}
+
+.submit-button .active {
+  cursor: pointer;
+  background: linear-gradient(265.39deg, #756ca3 4.4%, #e0b1cb 88.73%);
+}
+
+@media (min-width: 930px) {
+  .forms {
+    padding: 25px 160px;
+  }
+}
