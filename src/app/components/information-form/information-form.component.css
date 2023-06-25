@@ -71,6 +71,10 @@ label {
   background: linear-gradient(265.39deg, #756ca3 4.4%, #e0b1cb 88.73%);
 }
 
+.error-message{
+  color: #D84C8D;
+}
+
 @media (min-width: 930px) {
   .forms {
     padding: 25px 160px;

@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import {
+  FormBuilder,
   FormControl,
   FormGroup,
   Validators,
@@ -18,16 +19,18 @@ export class InformationFormComponent implements OnInit {
   userName: string;
   isCheckboxSelected: string = '';
   form!: FormGroup;
+
   constructor(private router: Router,
-    private dataSavingService: DataSavingService) {
+    private dataSavingService: DataSavingService,
+    private formBuilder: FormBuilder) {
     this.name = '';
     this.userName = '';
   }
   ngOnInit(): void {
-    this.form = new FormGroup({
-      name: new FormControl(''),
-      userName: new FormControl(''),
-      isCheckboxSelected: new FormControl('', Validators.required),
+    this.form = this.formBuilder.group({
+      name: ['', Validators.required],
+      userName: ['', Validators.required],
+      isCheckboxSelected: ['', Validators.required],
     });
   }
 

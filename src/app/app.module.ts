@@ -9,6 +9,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { InformationFormComponent } from './components/information-form/information-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { DataSavingService } from './services/data-saving.service';
 
 @NgModule({
   declarations: [AppComponent, MainPageComponent, InformationFormComponent, ProfilePageComponent],
@@ -19,7 +20,7 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [DataSavingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
