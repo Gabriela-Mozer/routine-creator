@@ -37,7 +37,7 @@ export class InformationFormComponent implements OnInit {
         name: this.form.value.name,
         userName: this.form.value.userName
       };
-      this.dataSavingService = this.form.value;
+      this.dataSavingService.saveData(formData);
       console.log('Bitch', formData);
     }
   }

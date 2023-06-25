@@ -10,6 +10,10 @@ export class DataSavingService {
   formData: any;
 
   constructor(private http: HttpClient) {
+    
+   }
+   saveData(formData: any): void{
+    this.formData = formData;
    }
 
 }
