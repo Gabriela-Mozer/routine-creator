@@ -13,11 +13,10 @@ export class ProfilePageComponent {
 
   formData: any;
 
-  constructor(private route: ActivatedRoute){}
+  constructor(private route: ActivatedRoute,
+    private dataSavingService: DataSavingService){}
   ngOnInit(): void{
-    this.route.params.subscribe(params =>{
-      this.formData = params;
-    })
+    this.formData = this.dataSavingService.getFormData()
   }
 
 }

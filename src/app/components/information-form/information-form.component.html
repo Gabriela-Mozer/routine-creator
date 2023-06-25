@@ -85,8 +85,9 @@
         [disabled]="form.invalid || !isCheckboxSelected"
         [ngClass]="{ active: form.valid && isCheckboxSelected }"
         class="submit-button"
-        (click)="navigateToProfile(form.value)"
+       (click)="onSubmit()"
       >
+       <!-- (click)="navigateToProfile(form.value)" -->
         Submit
       </button>
     </form>

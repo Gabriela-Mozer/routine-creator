@@ -15,5 +15,8 @@ export class DataSavingService {
    saveData(formData: any): void{
     this.formData = formData;
    }
-
+   getFormData():any{
+    return this.formData;
+   }
+ 
 }

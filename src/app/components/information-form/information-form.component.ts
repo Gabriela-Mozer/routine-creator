@@ -41,6 +41,7 @@ export class InformationFormComponent implements OnInit {
         userName: this.form.value.userName
       };
       this.dataSavingService.saveData(formData);
+      this.router.navigate(['app-profile-page', formData]);
       console.log('Bitch', formData);
     }
   }
@@ -50,10 +51,9 @@ export class InformationFormComponent implements OnInit {
    // this.form.patchValue({ isCheckboxSelected: value });
   }
 
-  navigateToProfile(formData: any){
-    this.router.navigate(['app-profile-page', formData])
-
-  }
+  // navigateToProfile(formData: any){
+  //   this.router.navigate(['app-profile-page', formData])
+  // }
 }
 
 //!! dodanie przed wartościami, których typem jest string powoduje, że
