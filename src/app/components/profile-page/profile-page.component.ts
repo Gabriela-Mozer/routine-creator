@@ -15,6 +15,7 @@ export class ProfilePageComponent {
 
   constructor(private route: ActivatedRoute,
     private dataSavingService: DataSavingService){}
+    
   ngOnInit(): void{
     this.formData = this.dataSavingService.getFormData()
   }

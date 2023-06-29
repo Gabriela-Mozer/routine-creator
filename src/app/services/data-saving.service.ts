@@ -12,9 +12,11 @@ export class DataSavingService {
   constructor(private http: HttpClient) {
     
    }
+
    saveData(formData: any): void{
     this.formData = formData;
    }
+   
    getFormData():any{
     return this.formData;
    }

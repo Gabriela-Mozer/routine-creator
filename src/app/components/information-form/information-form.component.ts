@@ -38,11 +38,13 @@ export class InformationFormComponent implements OnInit {
     if (this.form.valid && this.isCheckboxSelected) {
       const formData = {
         name: this.form.value.name,
-        userName: this.form.value.userName
+        userName: this.form.value.userName,
+        personal: this.form.value.isCheckboxSelected === 'personal'
       };
       this.dataSavingService.saveData(formData);
       this.router.navigate(['app-profile-page', formData]);
-      console.log('Bitch', formData);
+      console.log('Bitch', formData.personal);
+      console.log('ssmms', formData.userName)
     }
   }
 
@@ -51,9 +53,6 @@ export class InformationFormComponent implements OnInit {
    // this.form.patchValue({ isCheckboxSelected: value });
   }
 
-  // navigateToProfile(formData: any){
-  //   this.router.navigate(['app-profile-page', formData])
-  // }
 }
 
 //!! dodanie przed wartościami, których typem jest string powoduje, że

@@ -48,8 +48,9 @@
             class="form-check-input"
             [checked]="isCheckboxSelected === 'personal'"
             (change)="onCheckboxSelected('personal')"
-            [(ngModel)]="form.value.personal"
+          
           />
+            
           <label for="personalRadio" class="form-check-label">Personal</label>
         </div>
         <div class="form-check">
@@ -87,7 +88,6 @@
         class="submit-button"
        (click)="onSubmit()"
       >
-       <!-- (click)="navigateToProfile(form.value)" -->
         Submit
       </button>
     </form>
