@@ -20,9 +20,11 @@ export class InformationFormComponent implements OnInit {
   isCheckboxSelected: string = '';
   form!: FormGroup;
 
-  constructor(private router: Router,
+  constructor(
+    private router: Router,
     private dataSavingService: DataSavingService,
-    private formBuilder: FormBuilder) {
+    private formBuilder: FormBuilder
+  ) {
     this.name = '';
     this.userName = '';
   }
@@ -34,25 +36,28 @@ export class InformationFormComponent implements OnInit {
     });
   }
 
-  onSubmit():void {
+  onSubmit(): void {
     if (this.form.valid && this.isCheckboxSelected) {
       const formData = {
         name: this.form.value.name,
         userName: this.form.value.userName,
-        personal: this.form.value.isCheckboxSelected === 'personal'
+        personal: this.form.value.isCheckboxSelected === 'personal',
       };
       this.dataSavingService.saveData(formData);
       this.router.navigate(['app-profile-page', formData]);
       console.log('Bitch', formData.personal);
-      console.log('ssmms', formData.userName)
+      console.log('ssmms', formData.userName);
     }
   }
 
   onCheckboxSelected(value: string): void {
     this.isCheckboxSelected = value;
-   // this.form.patchValue({ isCheckboxSelected: value });
+    // this.form.patchValue({ isCheckboxSelected: value });
   }
 
+  navigateToBusiness() {
+    this.router.navigate(['app-business-user-info']);
+  }
 }
 
 //!! dodanie przed wartościami, których typem jest string powoduje, że

@@ -10,9 +10,11 @@ import { InformationFormComponent } from './components/information-form/informat
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { DataSavingService } from './services/data-saving.service';
+import { BusinessUserInfoComponent } from './components/business-user-info/business-user-info.component';
+
 
 @NgModule({
-  declarations: [AppComponent, MainPageComponent, InformationFormComponent, ProfilePageComponent],
+  declarations: [AppComponent, MainPageComponent, InformationFormComponent, ProfilePageComponent, BusinessUserInfoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

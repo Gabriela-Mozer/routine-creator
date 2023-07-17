@@ -9,13 +9,14 @@ import { DataSavingService } from 'src/app/services/data-saving.service';
   styleUrls: ['./profile-page.component.css'],
   encapsulation: ViewEncapsulation.Emulated
 })
+
 export class ProfilePageComponent {
 
   formData: any;
 
   constructor(private route: ActivatedRoute,
     private dataSavingService: DataSavingService){}
-    
+
   ngOnInit(): void{
     this.formData = this.dataSavingService.getFormData()
   }

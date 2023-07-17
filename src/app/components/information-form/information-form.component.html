@@ -87,6 +87,7 @@
         [ngClass]="{ active: form.valid && isCheckboxSelected }"
         class="submit-button"
        (click)="onSubmit()"
+       (click)="navigateToBusiness()"
       >
         Submit
       </button>
