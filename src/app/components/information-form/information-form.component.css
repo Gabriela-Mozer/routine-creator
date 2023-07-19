@@ -48,10 +48,10 @@
   margin-bottom: 50px;
 }
 
-.disabled-button {
+/* .disabled-button {
   cursor: not-allowed;
   background-color: #baa3c8;
-}
+} */
 
 form {
   display: flex;
@@ -62,7 +62,7 @@ label {
   color: #ffffff;
 }
 
-.submit-button {
+.submit-button[disabled] {
   cursor: not-allowed;
 }
 

@@ -62,7 +62,7 @@
             class="form-check-input"
             [checked]="isCheckboxSelected === 'business'"
             (change)="onCheckboxSelected('business')"
-            [(ngModel)]="form.value.business"
+           
           />
           <label for="businessRadio" class="form-check-label">Business</label>
         </div>
@@ -75,19 +75,18 @@
             class="form-check-input"
             [checked]="isCheckboxSelected === 'both'"
             (change)="onCheckboxSelected('both')"
-            [(ngModel)]="form.value.both"
+            
           />
           <label for="bothRadio" class="form-check-label">Both</label>
         </div>
       </div>
-
+ 
       <button
         type="button"
         [disabled]="form.invalid || !isCheckboxSelected"
-        [ngClass]="{ active: form.valid && isCheckboxSelected }"
+        [ngClass]="{ active: form.valid && isCheckboxSelected, 'not-allowed': form.invalid || !isCheckboxSelected }"
         class="submit-button"
-       (click)="onSubmit()"
-       (click)="navigateToBusiness()"
+        (click)="onSubmit();  navigateToBusiness()"
       >
         Submit
       </button>

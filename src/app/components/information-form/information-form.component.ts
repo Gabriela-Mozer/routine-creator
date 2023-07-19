@@ -52,11 +52,12 @@ export class InformationFormComponent implements OnInit {
 
   onCheckboxSelected(value: string): void {
     this.isCheckboxSelected = value;
-    // this.form.patchValue({ isCheckboxSelected: value });
   }
 
   navigateToBusiness() {
-    this.router.navigate(['app-business-user-info']);
+    if(this.isCheckboxSelected ==='business'){
+      this.router.navigate(['app-business-user-info']);
+    }
   }
 }
 
