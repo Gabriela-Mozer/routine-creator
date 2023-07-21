@@ -14,7 +14,7 @@
     padding: 75px 0;
 }
 
-button {
+.start-button {
     width: 250px;
     align-self: center;
     height: 50px;
@@ -25,4 +25,5 @@ button {
     border-radius: 40px;
     cursor: pointer;
     margin-top: 60px;
+    background: linear-gradient(265.39deg, #756CA3 4.4%, #E0B1CB 88.73%); 
 }

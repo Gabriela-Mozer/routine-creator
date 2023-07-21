@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700&display=swap");
-@import "../../../../src/styles.css";
+@import "../../../../src/styles.css"; 
 
 .container {
   display: flex;
@@ -46,12 +46,8 @@
   cursor: pointer;
   margin-top: 60px;
   margin-bottom: 50px;
+  background: linear-gradient(265.39deg, #756CA3 4.4%, #E0B1CB 88.73%);
 }
-
-/* .disabled-button {
-  cursor: not-allowed;
-  background-color: #baa3c8;
-} */
 
 form {
   display: flex;
@@ -64,6 +60,7 @@ label {
 
 .submit-button[disabled] {
   cursor: not-allowed;
+  background: linear-gradient(265.39deg, #4a4566 4.4%, #9d6784 88.73%);
 }
 
 .submit-button .active {
