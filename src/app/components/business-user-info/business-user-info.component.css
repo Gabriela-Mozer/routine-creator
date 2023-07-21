@@ -22,11 +22,11 @@
 button {
   width: 250px;
   align-self: center;
-  height: 50px;
+  height: 60px;
   color: #ffffff;
   font-weight: 500;
   font-size: 20px;
-  border: 2px solid #8e6ca3;
+  border: 6px solid #8e6ca3;
   border-radius: 40px;
   cursor: pointer;
   margin: 60px 10px;
@@ -35,4 +35,20 @@ button {
 
 .looking-button {
  background-color: #231942;
+}
+
+.glass {
+    width: 30px;
+    margin-right: 14px;
+}
+
+.student { 
+    width: 40px;
+    margin-right: 14px;
+    padding-bottom: 8px;
+}
+
+.hired { 
+    width: 30px;
+    margin-right: 14px;
 }
