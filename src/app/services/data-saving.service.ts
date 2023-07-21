@@ -13,11 +13,11 @@ export class DataSavingService {
     
    }
 
-   saveData(formData: any): void{
+   saveData(formData: any): void {
     this.formData = formData;
    }
    
-   getFormData():any{
+   getFormData():any {
     return this.formData;
    }
  
