@@ -2,8 +2,50 @@
   <h1 class="business-header">What is your current job status?</h1>
 
   <div class="button-container">
-    <button class="looking-button"><img class="glass" src="../../../assets/looking-for.svg">Looking for</button>
-    <button class="student-button"><img class="student" src="../../../assets/school.svg">Student</button>
-    <button class="hired-button"><img class="hired" src="../../../assets/business_center.svg">Hired</button>
+    <button class="looking-button">
+      <img class="glass" src="../../../assets/looking-for.svg" />Looking for
+    </button>
+    <button class="student-button">
+      <img class="student" src="../../../assets/school.svg" />Student
+    </button>
+    <button class="hired-button">
+      <img class="hired" src="../../../assets/business_center.svg" />Hired
+    </button>
+  </div>
+
+  <span class="line-span">
+    <img class="line" src="../../../assets/line.svg" />
+  </span>
+
+  <h2 class="chat-header">Are you open to chat?</h2>
+
+  <div class="chat-checkboxes">
+    <form>
+      <label for="yes-chat">
+        <input type="radio" 
+        id="yes-chat" 
+        value="yes-chat" 
+        class="yes-chat" />
+        <img src="../../../assets/single-chat.svg" alt="yes-graph">
+        <span>YES</span>
+      </label>
+
+      <label for="group-chat">
+        <input
+          type="radio"
+          value="group-chat"
+          id="group-chat"
+          class="group-chat"
+        />
+        <img src="../../../assets/group-chat.svg" alt="group-graph">
+        <span>Yes, also for group chats</span>
+      </label>
+
+      <label for="no-chat">
+        <input type="radio" value="no-chat" id="no-chat" class="no-chat" />
+        <img src="../../../assets/no-chat.svg" alt="no-chat">
+        <span>NO</span>
+      </label>
+    </form>
   </div>
 </div>

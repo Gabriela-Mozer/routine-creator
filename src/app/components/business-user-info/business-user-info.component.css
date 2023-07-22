@@ -52,3 +52,36 @@ button {
     width: 30px;
     margin-right: 14px;
 }
+
+.line-span {
+    padding-top: 40px;
+}
+
+.line {
+    width: 100%;
+}
+
+/* Hide the default checkboxes */
+.chat-checkboxes input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style the label elements to create custom graphics */
+  .chat-checkboxes label {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  /* Style the images */
+  .chat-checkboxes img {
+    width: 20px; /* Set the image width as needed */
+    height: 20px; /* Set the image height as needed */
+    /* Add other styles to customize the appearance of the images */
+  }
+  
+  /* Style the text */
+  .chat-checkboxes span {
+    /* Add styles to customize the appearance of the text */
+  }
+  
