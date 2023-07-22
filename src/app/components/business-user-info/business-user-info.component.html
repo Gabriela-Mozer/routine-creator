@@ -22,12 +22,16 @@
   <div class="chat-checkboxes">
     <form>
       <label for="yes-chat">
-        <input type="radio" 
-        id="yes-chat" 
-        value="yes-chat" 
-        class="yes-chat" />
-        <img src="../../../assets/single-chat.svg" alt="yes-graph">
-        <span>YES</span>
+        <input
+          type="radio"
+          id="yes-chat"
+          value="yes-chat"
+          class="yes-chat"
+          (click)="onInputClick('yes')"
+          (click)="onOptionClick('yes')"
+        />
+        <img [src]="getImgPath('yes')" alt="yes-graph" />
+        <span [class.underline]="clickedOption ==='yes'">YES</span>
       </label>
 
       <label for="group-chat">
@@ -36,15 +40,26 @@
           value="group-chat"
           id="group-chat"
           class="group-chat"
+          (click)="onInputClick('yes-group')"
+          (click)="onOptionClick('yes-group')"
         />
-        <img src="../../../assets/group-chat.svg" alt="group-graph">
-        <span>Yes, also for group chats</span>
+        <img [src]="getImgPath('yes-group')" alt="group-graph" />
+        <span [class.underline]="clickedOption ==='yes-group'"
+          >Yes, also for group chats</span
+        >
       </label>
 
       <label for="no-chat">
-        <input type="radio" value="no-chat" id="no-chat" class="no-chat" />
-        <img src="../../../assets/no-chat.svg" alt="no-chat">
-        <span>NO</span>
+        <input
+          type="radio"
+          value="no-chat"
+          id="no-chat"
+          class="no-chat"
+          (click)="onInputClick('no')"
+          (click)="onOptionClick('no')"
+        />
+        <img [src]="getImgPath('no')" alt="no-chat" />
+        <span [class.underline]="clickedOption==='no'">NO</span>
       </label>
     </form>
   </div>

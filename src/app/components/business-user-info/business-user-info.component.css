@@ -12,6 +12,7 @@
   align-self: center;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .business-header {
@@ -34,54 +35,77 @@ button {
 }
 
 .looking-button {
- background-color: #231942;
+  background-color: #231942;
 }
 
 .glass {
-    width: 30px;
-    margin-right: 14px;
+  width: 30px;
+  margin-right: 14px;
 }
 
-.student { 
-    width: 40px;
-    margin-right: 14px;
-    padding-bottom: 8px;
+.student {
+  width: 40px;
+  margin-right: 14px;
+  padding-bottom: 8px;
 }
 
-.hired { 
-    width: 30px;
-    margin-right: 14px;
+.hired {
+  width: 30px;
+  margin-right: 14px;
 }
 
 .line-span {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .line {
-    width: 100%;
+  width: 100%;
 }
 
-/* Hide the default checkboxes */
+.chat-header {
+  align-self: center;
+  padding-top: 30px;
+}
+
+.chat-checkboxes {
+  display: flex;
+  align-self: center;
+  padding: 30px;
+}
+
 .chat-checkboxes input[type="radio"] {
-    display: none;
+  display: none;
+}
+
+/* Style the label elements to create custom graphics */
+.chat-checkboxes label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 50px; /* Adjust the margin as needed */
+}
+
+/* Style the images */
+.chat-checkboxes img {
+  width: 20px; /* Set the image width as needed */
+  height: 20px; /* Set the image height as needed */
+  /* Add other styles to customize the appearance of the images */
+}
+
+/* Style the text */
+.chat-checkboxes label span {
+  text-decoration: none;
+}
+
+.chat-checkboxes label span.underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .business-header {
+    text-align: center;
   }
-  
-  /* Style the label elements to create custom graphics */
-  .chat-checkboxes label {
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 10px; /* Adjust the margin as needed */
+
+  button {
+    margin: 12px 4px;
   }
-  
-  /* Style the images */
-  .chat-checkboxes img {
-    width: 20px; /* Set the image width as needed */
-    height: 20px; /* Set the image height as needed */
-    /* Add other styles to customize the appearance of the images */
-  }
-  
-  /* Style the text */
-  .chat-checkboxes span {
-    /* Add styles to customize the appearance of the text */
-  }
-  
+}

@@ -10,12 +10,36 @@ import { DataSavingService } from 'src/app/services/data-saving.service';
 })
 export class BusinessUserInfoComponent implements OnInit{
   formData: any;
+  clickedInput: string = '';
+  clickedOption: string = ''; 
+
   constructor(private router: Router, private dataSvingService: DataSavingService) {
   }
   ngOnInit(): void {
    this.formData = this.dataSvingService.getFormData();
    console.log(this.formData);
   }
+
+  onInputClick(inputName: string) {
+    this.clickedInput = inputName;
+  }
+
+  getImgPath(inputName: string): string {
+    if(inputName === 'yes') {
+      return this.clickedInput === 'yes' ? '../../../assets/chat-filled.svg' : '../../../assets/single-chat.svg';
+    }
+    if(inputName ==='yes-group') {
+      return this.clickedInput === 'yes-group' ? '../../../assets/chat-group-filled.svg' : '../../../assets/group-chat.svg';
+    }
+    if(inputName ==='no') {
+      return this.clickedInput === 'no' ? '../../../assets/no-chat-filled.svg' : '../../../assets/no-chat.svg';
+    }
+    return '';
+  }
+
+ onOptionClick(option: string) {
+  this.clickedOption = option;
+ }
 }
 
 
