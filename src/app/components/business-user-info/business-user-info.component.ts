@@ -45,7 +45,6 @@ export class BusinessUserInfoComponent implements OnInit{
 
  onClickedButton(buttonName: string) {
   this.dataSavingService.saveDataButton(buttonName);
-  console.log(buttonName, 'sralalala')
   this.clickedButton = this.dataSavingService.getSelectedButton();
  }
 }

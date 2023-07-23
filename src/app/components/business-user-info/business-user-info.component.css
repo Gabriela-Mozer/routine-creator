@@ -131,4 +131,8 @@ button.clicked {
   button {
     margin: 12px 4px;
   }
+  .chat-checkboxes {
+    width: 55%;
+    padding: 0;
+  }
 }
