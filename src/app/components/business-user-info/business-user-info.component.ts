@@ -12,6 +12,7 @@ export class BusinessUserInfoComponent implements OnInit{
   formData: any;
   clickedInput: string = '';
   clickedOption: string = ''; 
+  clickedButton: string = '';
 
   constructor(private router: Router, private dataSvingService: DataSavingService) {
   }
@@ -39,6 +40,10 @@ export class BusinessUserInfoComponent implements OnInit{
 
  onOptionClick(option: string) {
   this.clickedOption = option;
+ }
+
+ onClickedButton(buttonName: string) {
+  this.clickedButton = buttonName;
  }
 }
 

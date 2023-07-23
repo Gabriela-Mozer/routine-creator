@@ -30,8 +30,14 @@ button {
   border: 6px solid #8e6ca3;
   border-radius: 40px;
   cursor: pointer;
-  margin: 60px 10px;
+  margin: 50px 10px;
   background-color: #231942;
+}
+
+button.clicked {
+  border: 1px solid #e0b1cb;
+  background: linear-gradient(205deg, #a772b4 0%, rgba(188, 147, 213, 0) 100%);
+  box-shadow: 0px 0px 7px 0px #fcf6bd;
 }
 
 .looking-button {
@@ -98,23 +104,19 @@ button {
 .chat-checkboxes label span.underline {
   text-decoration: underline;
   text-underline-offset: 3px;
-  
-  
 }
 
 .chat-checkboxes label span.green-underline {
-    text-decoration-color: #d0f4de;
+  text-decoration-color: #d0f4de;
 }
 
 .chat-checkboxes label span.yellow-underline {
-    text-decoration-color: #FCF6BD;
+  text-decoration-color: #fcf6bd;
 }
 
 .chat-checkboxes label span.red-underline {
-    text-decoration-color: #D84C8D;
+  text-decoration-color: #d84c8d;
 }
-
-
 
 @media (max-width: 800px) {
   .business-header {
