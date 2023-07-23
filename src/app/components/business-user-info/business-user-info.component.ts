@@ -14,10 +14,11 @@ export class BusinessUserInfoComponent implements OnInit{
   clickedOption: string = ''; 
   clickedButton: string = '';
 
-  constructor(private router: Router, private dataSvingService: DataSavingService) {
+  constructor(private router: Router, private dataSavingService: DataSavingService) {
   }
   ngOnInit(): void {
-   this.formData = this.dataSvingService.getFormData();
+   this.formData = this.dataSavingService.getFormData();
+   this.clickedButton =this.dataSavingService.getSelectedButton();
    console.log(this.formData);
   }
 
@@ -43,7 +44,9 @@ export class BusinessUserInfoComponent implements OnInit{
  }
 
  onClickedButton(buttonName: string) {
-  this.clickedButton = buttonName;
+  this.dataSavingService.saveDataButton(buttonName);
+  console.log(buttonName, 'sralalala')
+  this.clickedButton = this.dataSavingService.getSelectedButton();
  }
 }
 

@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class DataSavingService {
   formData: any;
+  clickedButton: string ='';
 
   constructor(private http: HttpClient) {
     
@@ -19,6 +20,14 @@ export class DataSavingService {
    
    getFormData():any {
     return this.formData;
+   }
+
+   saveDataButton(choosenButton: string): any{
+    this.clickedButton = choosenButton;
+   }
+
+   getSelectedButton(): string {
+    return this.clickedButton;
    }
  
 }

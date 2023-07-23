@@ -43,6 +43,11 @@ button.clicked {
 .looking-button {
   background-color: #231942;
 }
+.looking-button.clicked {
+  border: 1px solid #e0b1cb;
+  background: linear-gradient(205deg, #a772b4 0%, rgba(188, 147, 213, 0) 100%);
+  box-shadow: 0px 0px 7px 0px #fcf6bd;
+}
 
 .glass {
   width: 30px;
