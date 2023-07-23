@@ -88,7 +88,6 @@ button {
 .chat-checkboxes img {
   width: 20px; /* Set the image width as needed */
   height: 20px; /* Set the image height as needed */
-  /* Add other styles to customize the appearance of the images */
 }
 
 /* Style the text */
@@ -98,7 +97,24 @@ button {
 
 .chat-checkboxes label span.underline {
   text-decoration: underline;
+  text-underline-offset: 3px;
+  
+  
 }
+
+.chat-checkboxes label span.green-underline {
+    text-decoration-color: #d0f4de;
+}
+
+.chat-checkboxes label span.yellow-underline {
+    text-decoration-color: #FCF6BD;
+}
+
+.chat-checkboxes label span.red-underline {
+    text-decoration-color: #D84C8D;
+}
+
+
 
 @media (max-width: 800px) {
   .business-header {

@@ -31,7 +31,10 @@
           (click)="onOptionClick('yes')"
         />
         <img [src]="getImgPath('yes')" alt="yes-graph" />
-        <span [class.underline]="clickedOption ==='yes'">YES</span>
+        <span 
+        class="yes-span"
+        [class.underline]="clickedOption ==='yes'"
+        [class.green-underline]="clickedOption ==='yes'">YES</span>
       </label>
 
       <label for="group-chat">
@@ -44,7 +47,10 @@
           (click)="onOptionClick('yes-group')"
         />
         <img [src]="getImgPath('yes-group')" alt="group-graph" />
-        <span [class.underline]="clickedOption ==='yes-group'"
+        <span 
+        class="yes-group-span" 
+        [class.underline]="clickedOption ==='yes-group'"
+        [class.yellow-underline]="clickedOption ==='yes-group'"
           >Yes, also for group chats</span
         >
       </label>
@@ -59,7 +65,10 @@
           (click)="onOptionClick('no')"
         />
         <img [src]="getImgPath('no')" alt="no-chat" />
-        <span [class.underline]="clickedOption==='no'">NO</span>
+        <span
+         class="no-span"
+        [class.underline]="clickedOption==='no'"
+        [class.red-underline]="clickedOption ==='no'">NO</span>
       </label>
     </form>
   </div>
