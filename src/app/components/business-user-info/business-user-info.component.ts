@@ -50,8 +50,15 @@ export class BusinessUserInfoComponent implements OnInit{
  }
 
  onSubmit(): void {
-  console.log(this.formData.checkboxesBusinessData)
-  this.dataSavingService.saveData(this.formData.checkboxesBusinessData)
+  this.dataSavingService.saveData(this.formData.checkboxesBusinessData);
+  this.dataSavingService.getSelectedButton();
+ }
+
+ areFieldSelected(): boolean {
+   return (
+    this.clickedButton !== '' &&
+    this.clickedInput !== '' || this.clickedOption !== ''
+   );
  }
 }
 

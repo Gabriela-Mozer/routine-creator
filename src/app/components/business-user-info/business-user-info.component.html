@@ -2,21 +2,25 @@
   <h1 class="business-header">What is your current job status?</h1>
 
   <div class="button-container">
-    <button 
-    class="looking-button" 
-    (click)="onClickedButton('looking-button')"
-    [ngClass]="{'clicked': clickedButton === 'looking-button'}">
+    <button
+      class="looking-button"
+      (click)="onClickedButton('looking-button')"
+      [ngClass]="{ clicked: clickedButton === 'looking-button' }"
+    >
       <img class="glass" src="../../../assets/looking-for.svg" />Looking for
     </button>
-    <button 
-    class="student-button"
-    (click)="onClickedButton('student-button')"
-    [ngClass]="{'clicked': clickedButton === 'student-button'}">
+    <button
+      class="student-button"
+      (click)="onClickedButton('student-button')"
+      [ngClass]="{ clicked: clickedButton === 'student-button' }"
+    >
       <img class="student" src="../../../assets/school.svg" />Student
     </button>
-    <button class="hired-button"
-    (click)="onClickedButton('hired-button')"
-    [ngClass]="{'clicked': clickedButton === 'hired-button'}">
+    <button
+      class="hired-button"
+      (click)="onClickedButton('hired-button')"
+      [ngClass]="{ clicked: clickedButton === 'hired-button' }"
+    >
       <img class="hired" src="../../../assets/business_center.svg" />Hired
     </button>
   </div>
@@ -35,7 +39,7 @@
           id="yes-chat"
           value="yes-chat"
           class="yes-chat"
-          (click)="onInputClick('yes');onOptionClick('yes')"
+          (click)="onInputClick('yes'); onOptionClick('yes')"
         />
         <img [src]="getImgPath('yes')" alt="yes-graph" />
         <span
@@ -53,9 +57,8 @@
           id="group-chat"
           class="group-chat"
           (click)="onInputClick('yes-group'); onOptionClick('yes-group')"
-          
         />
-         
+
         <img [src]="getImgPath('yes-group')" alt="group-graph" />
         <span
           class="yes-group-span"
@@ -71,8 +74,7 @@
           value="no-chat"
           id="no-chat"
           class="no-chat"
-          (click)="onInputClick('no');onOptionClick('no') "
-          
+          (click)="onInputClick('no'); onOptionClick('no')"
         />
         <img [src]="getImgPath('no')" alt="no-chat" />
         <span
@@ -82,11 +84,15 @@
           >NO</span
         >
       </label>
-
-      <button 
-      type="button"
-      class="submit-button"
-      (click)="onSubmit()">Submit</button>
     </form>
   </div>
+  <button
+    type="button"
+    class="submit-button"
+    (click)="onSubmit()"
+    [ngClass]="{'active': areFieldSelected(), disabled: !areFieldSelected()}"
+    [disabled]="!areFieldSelected"
+    >
+    Submit
+  </button>
 </div>

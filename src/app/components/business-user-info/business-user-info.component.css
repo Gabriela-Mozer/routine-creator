@@ -123,6 +123,21 @@ button.clicked {
   text-decoration-color: #d84c8d;
 }
 
+.submit-button {
+  align-self: center;
+  border: none;
+}
+.active {
+  cursor: pointer;
+  background: linear-gradient(265.39deg, #756ca3 4.4%, #e0b1cb 88.73%);
+}
+
+
+.disabled {
+  border: 2px solid #756ca3!important;
+  cursor: not-allowed!important;
+}
+
 @media (max-width: 800px) {
   .business-header {
     text-align: center;
