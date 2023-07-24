@@ -35,8 +35,7 @@
           id="yes-chat"
           value="yes-chat"
           class="yes-chat"
-          (click)="onInputClick('yes')"
-          (click)="onOptionClick('yes')"
+          (click)="onInputClick('yes');onOptionClick('yes')"
         />
         <img [src]="getImgPath('yes')" alt="yes-graph" />
         <span
@@ -53,9 +52,10 @@
           value="group-chat"
           id="group-chat"
           class="group-chat"
-          (click)="onInputClick('yes-group')"
-          (click)="onOptionClick('yes-group')"
+          (click)="onInputClick('yes-group'); onOptionClick('yes-group')"
+          
         />
+         
         <img [src]="getImgPath('yes-group')" alt="group-graph" />
         <span
           class="yes-group-span"
@@ -71,8 +71,8 @@
           value="no-chat"
           id="no-chat"
           class="no-chat"
-          (click)="onInputClick('no')"
-          (click)="onOptionClick('no')"
+          (click)="onInputClick('no');onOptionClick('no') "
+          
         />
         <img [src]="getImgPath('no')" alt="no-chat" />
         <span
@@ -82,6 +82,11 @@
           >NO</span
         >
       </label>
+
+      <button 
+      type="button"
+      class="submit-button"
+      (click)="onSubmit()">Submit</button>
     </form>
   </div>
 </div>

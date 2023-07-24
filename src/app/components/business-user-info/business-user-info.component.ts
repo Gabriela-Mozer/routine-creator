@@ -41,11 +41,17 @@ export class BusinessUserInfoComponent implements OnInit{
 
  onOptionClick(option: string) {
   this.clickedOption = option;
+  this.formData.checkboxesBusinessData = this.clickedOption;      
  }
 
  onClickedButton(buttonName: string) {
   this.dataSavingService.saveDataButton(buttonName);
   this.clickedButton = this.dataSavingService.getSelectedButton();
+ }
+
+ onSubmit(): void {
+  console.log(this.formData.checkboxesBusinessData)
+  this.dataSavingService.saveData(this.formData.checkboxesBusinessData)
  }
 }
 
