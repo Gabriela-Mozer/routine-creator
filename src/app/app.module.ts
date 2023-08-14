@@ -11,10 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { DataSavingService } from './services/data-saving.service';
 import { BusinessUserInfoComponent } from './components/business-user-info/business-user-info.component';
+import { PersonalUserInfoComponent } from './components/personal-user-info/personal-user-info.component';
 
 
 @NgModule({
-  declarations: [AppComponent, MainPageComponent, InformationFormComponent, ProfilePageComponent, BusinessUserInfoComponent],
+  declarations: [AppComponent, MainPageComponent, InformationFormComponent, ProfilePageComponent, BusinessUserInfoComponent, PersonalUserInfoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

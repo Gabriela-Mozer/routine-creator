@@ -1,5 +1,6 @@
 @import "../../../../src/styles.css";
 
+
 .container {
   color: #ffffff;
   display: flex;
@@ -15,7 +16,7 @@
   flex-wrap: wrap;
 }
 
-.business-header {
+.time-header {
   align-self: center;
   padding: 50px;
 }
@@ -40,29 +41,13 @@ button.clicked {
   box-shadow: 0px 0px 7px 0px #fcf6bd;
 }
 
-.looking-button {
+.time-button {
   background-color: #231942;
 }
-.looking-button.clicked {
+.time-button.clicked {
   border: 1px solid #e0b1cb;
   background: linear-gradient(205deg, #a772b4 0%, rgba(188, 147, 213, 0) 100%);
   box-shadow: 0px 0px 7px 0px #fcf6bd;
-}
-
-.glass {
-  width: 30px;
-  margin-right: 14px;
-}
-
-.student {
-  width: 40px;
-  margin-right: 14px;
-  padding-bottom: 8px;
-}
-
-.hired {
-  width: 30px;
-  margin-right: 14px;
 }
 
 .line-span {

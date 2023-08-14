@@ -1,0 +1,99 @@
+<div class="container">
+    <h1 class="time-header">Why you want use this app for?</h1>
+  
+    <div class="button-container">
+      <button
+        class="time-button"
+        (click)="onClickedButton('time-button')"
+        [ngClass]="{ clicked: clickedButton === 'time-button' }"
+      >
+        Time management
+      </button>
+      <button
+        class="share-button"
+        (click)="onClickedButton('share-button')"
+        [ngClass]="{ clicked: clickedButton === 'share-button' }"
+      >
+       Share my life
+      </button>
+      <button
+        class="self-button"
+        (click)="onClickedButton('self-button')"
+        [ngClass]="{ clicked: clickedButton === 'self-button' }"
+      >
+        Self development
+      </button>
+    </div>
+  
+    <span class="line-span">
+      <img class="line" src="../../../assets/line.svg" />
+    </span>
+  
+    <h2 class="chat-header">Are you open to chat?</h2>
+  
+    <div class="chat-checkboxes">
+      <form class="chat-options">
+        <label for="yes-chat">
+          <input
+            type="radio"
+            id="yes-chat"
+            value="yes-chat"
+            class="yes-chat"
+            (click)="onInputClick('yes'); onOptionClick('yes')"
+          />
+          <img [src]="getImgPath('yes')" alt="yes-graph" />
+          <span
+            class="yes-span"
+            [class.underline]="clickedOption === 'yes'"
+            [class.green-underline]="clickedOption === 'yes'"
+            >YES</span
+          >
+        </label>
+  
+        <label for="group-chat">
+          <input
+            type="radio"
+            value="group-chat"
+            id="group-chat"
+            class="group-chat"
+            (click)="onInputClick('yes-group'); onOptionClick('yes-group')"
+          />
+  
+          <img [src]="getImgPath('yes-group')" alt="group-graph" />
+          <span
+            class="yes-group-span"
+            [class.underline]="clickedOption === 'yes-group'"
+            [class.yellow-underline]="clickedOption === 'yes-group'"
+            >Yes, also for group chats</span
+          >
+        </label>
+  
+        <label for="no-chat">
+          <input
+            type="radio"
+            value="no-chat"
+            id="no-chat"
+            class="no-chat"
+            (click)="onInputClick('no'); onOptionClick('no')"
+          />
+          <img [src]="getImgPath('no')" alt="no-chat" />
+          <span
+            class="no-span"
+            [class.underline]="clickedOption === 'no'"
+            [class.red-underline]="clickedOption === 'no'"
+            >NO</span
+          >
+        </label>
+      </form>
+    </div>
+    <button
+      type="button"
+      class="submit-button"
+      (click)="onSubmit()"
+      [ngClass]="{'active': areFieldSelected(), disabled: !areFieldSelected()}"
+      [disabled]="!areFieldSelected"
+      >
+      Submit
+    </button>
+  </div>
+  

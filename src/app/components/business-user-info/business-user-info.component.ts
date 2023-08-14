@@ -15,6 +15,8 @@ export class BusinessUserInfoComponent implements OnInit{
   clickedButton: string = '';
 
   constructor(private router: Router, private dataSavingService: DataSavingService) {
+    this.formData = {};
+
   }
   ngOnInit(): void {
    this.formData = this.dataSavingService.getFormData();

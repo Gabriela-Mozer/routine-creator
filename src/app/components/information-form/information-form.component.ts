@@ -59,6 +59,11 @@ export class InformationFormComponent implements OnInit {
       this.router.navigate(['app-business-user-info']);
     }
   }
+  navigateToPersonal() {
+    if(this.isCheckboxSelected ==='personal') {
+      this.router.navigate(['app-personal-user-info']);
+    }
+  }
 }
 
 //!! dodanie przed wartościami, których typem jest string powoduje, że

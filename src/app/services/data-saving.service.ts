@@ -11,6 +11,11 @@ export class DataSavingService {
       yesGroup: false,
       no: false,
     },
+    checkboxesPersonalData: {
+      yes: false,
+      yesGroup: false,
+      no: false,
+    },
   };
   clickedButton: string = '';
 
