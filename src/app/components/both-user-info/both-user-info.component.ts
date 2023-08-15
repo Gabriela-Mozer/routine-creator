@@ -10,8 +10,8 @@ import { DataSavingService } from 'src/app/services/data-saving.service';
 })
 export class BothUserInfoComponent {
   formData: any;
-  clickedTimeButton: string = '';  // Track time button selection
-  clickedJobStatusButton: string = '';
+  //clickedTimeButton: string = '';  // Track time button selection
+  //clickedJobStatusButton: string = '';
   clickedInput: string = '';
   clickedOption: string = '';
   clickedButton: string = '';
@@ -55,6 +55,7 @@ export class BothUserInfoComponent {
     }
     return '';
   }
+  
 areSecondGroupSelected(): boolean {
   return (
     this.clickedSecondButton !== '' &&
@@ -63,10 +64,9 @@ areSecondGroupSelected(): boolean {
 }
   areFieldSelected():  boolean {
     return (
-      (this.clickedTimeButton !== '' && this.clickedJobStatusButton !== '') &&
       (this.clickedButton === 'time-button' || this.clickedButton === 'share-button' || this.clickedButton === 'self-button') &&
-      (this.clickedInput !== '' || this.clickedOption !== '') 
-     
+      (this.clickedInput !== '' || this.clickedOption !== '') &&
+      this.areSecondGroupSelected()
      );
    }
    onSubmit(): void {

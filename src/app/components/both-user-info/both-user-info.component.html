@@ -115,8 +115,8 @@
       type="button"
       class="submit-button"
       (click)="onSubmit()"
-      [ngClass]="{'active': areFieldSelected() && areSecondGroupSelected() , disabled: !areFieldSelected() && !areSecondGroupSelected()}"
-      [disabled]="!areFieldSelected() && !areSecondGroupSelected()"
+      [ngClass]="{'active': areFieldSelected() , disabled: !areFieldSelected()}"
+      [disabled]="!areFieldSelected()"
       >
       Submit
     </button>
