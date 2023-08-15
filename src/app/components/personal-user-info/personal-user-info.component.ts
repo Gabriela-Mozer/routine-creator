@@ -10,7 +10,7 @@ import { DataSavingService } from 'src/app/services/data-saving.service';
 export class PersonalUserInfoComponent {
   formData: any;
   clickedInput: string = '';
-  clickedOption: string= '';
+  clickedOption: string = '';
   clickedButton: string = '';
   constructor(private dataSavingService: DataSavingService) {
     this.formData = {

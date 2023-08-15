@@ -64,7 +64,11 @@ export class InformationFormComponent implements OnInit {
       this.router.navigate(['app-personal-user-info']);
     }
   }
+  navigateToBoth() {
+      if(this.isCheckboxSelected ==='both') {
+        this.router.navigate(['app-both-user-info']);
+      }
+  }
 }
-
 //!! dodanie przed wartościami, których typem jest string powoduje, że
 // typ zmienia się na boolean

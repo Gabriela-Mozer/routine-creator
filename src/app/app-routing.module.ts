@@ -5,6 +5,7 @@ import { InformationFormComponent } from './components/information-form/informat
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { BusinessUserInfoComponent } from './components/business-user-info/business-user-info.component';
 import { PersonalUserInfoComponent } from './components/personal-user-info/personal-user-info.component';
+import { BothUserInfoComponent } from './components/both-user-info/both-user-info.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'app-profile-page', component: ProfilePageComponent },
   { path: 'app-business-user-info', component: BusinessUserInfoComponent },
   { path: 'app-personal-user-info', component: PersonalUserInfoComponent },
+  { path: 'app-both-user-info', component: BothUserInfoComponent },
 ];
 
 @NgModule({
