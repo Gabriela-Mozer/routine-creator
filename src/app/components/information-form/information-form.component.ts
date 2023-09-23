@@ -45,8 +45,6 @@ export class InformationFormComponent implements OnInit {
       };
       this.dataSavingService.saveData(formData);
       this.router.navigate(['app-profile-page', formData]);
-      console.log('Bitch', formData.personal);
-      console.log('ssmms', formData.userName);
     }
   }
 

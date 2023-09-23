@@ -23,6 +23,7 @@ export class DataSavingService {
     },
   };
   clickedButton: string = '';
+  textareaData: string = '';
 
   constructor(private http: HttpClient) {}
 
@@ -40,5 +41,13 @@ export class DataSavingService {
 
   getSelectedButton(): string {
     return this.clickedButton;
+  }
+  
+  saveTextAreaData(textarea: string) : void {
+    this.textareaData = textarea;
+  }
+
+  getTextAreaData(): string {
+    return this.textareaData;
   }
 }

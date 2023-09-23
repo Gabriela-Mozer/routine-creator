@@ -89,7 +89,7 @@
   <button
     type="button"
     class="submit-button"
-    (click)="onSubmit()"
+    (click)="onSubmit(); navigateToExtraInfo()"
     [ngClass]="{'active': areFieldSelected(), disabled: !areFieldSelected()}"
     [disabled]="!areFieldSelected"
     >

@@ -13,10 +13,19 @@ import { DataSavingService } from './services/data-saving.service';
 import { BusinessUserInfoComponent } from './components/business-user-info/business-user-info.component';
 import { PersonalUserInfoComponent } from './components/personal-user-info/personal-user-info.component';
 import { BothUserInfoComponent } from './components/both-user-info/both-user-info.component';
-
+import { BusinnessExtraInfoComponent } from './components/businness-extra-info/businness-extra-info.component';
 
 @NgModule({
-  declarations: [AppComponent, MainPageComponent, InformationFormComponent, ProfilePageComponent, BusinessUserInfoComponent, PersonalUserInfoComponent, BothUserInfoComponent],
+  declarations: [
+    AppComponent,
+    MainPageComponent,
+    InformationFormComponent,
+    ProfilePageComponent,
+    BusinessUserInfoComponent,
+    PersonalUserInfoComponent,
+    BothUserInfoComponent,
+    BusinnessExtraInfoComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

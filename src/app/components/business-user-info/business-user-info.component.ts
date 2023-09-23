@@ -21,7 +21,6 @@ export class BusinessUserInfoComponent implements OnInit{
   ngOnInit(): void {
    this.formData = this.dataSavingService.getFormData();
    this.clickedButton =this.dataSavingService.getSelectedButton();
-   console.log(this.formData);
   }
 
   onInputClick(inputName: string) {
@@ -61,6 +60,9 @@ export class BusinessUserInfoComponent implements OnInit{
     this.clickedButton !== '' &&
     this.clickedInput !== '' || this.clickedOption !== ''
    );
+ }
+ navigateToExtraInfo() {
+  this.router.navigate(['app-businness-extra-info']);
  }
 }
 
