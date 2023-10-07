@@ -10,8 +10,6 @@ import { DataSavingService } from 'src/app/services/data-saving.service';
 })
 export class BothUserInfoComponent {
   formData: any;
-  //clickedTimeButton: string = '';  // Track time button selection
-  //clickedJobStatusButton: string = '';
   clickedInput: string = '';
   clickedOption: string = '';
   clickedButton: string = '';

@@ -1,2 +1,21 @@
-<textarea [(ngModel)]="job" maxlength="20">type your job, maximum 20 characters</textarea>
-<button (click)="saveTextArea()">Submit</button>
+<section class="extra-bussiness">
+  <textarea
+    placeholder="type your job, maximum 20 characters"
+    class="extra-bussiness__textarea"
+    [(ngModel)]="job"
+    maxlength="20"
+  ></textarea>
+  <button class="extra-bussiness-submit__button" (click)="saveTextArea()">
+    Save
+  </button>
+  <div class="extra-hobbies-checkboxes">
+    <form [formGroup]="clickForm" class="list">
+        <div formArrayName="myArray">
+          <div *ngFor="let control of arrayControls; let i = index">
+            <input type="checkbox" [formControlName]="i" />
+            <label> {{ checkboxLabels[i] }} </label>
+          </div>
+        </div>
+      </form>
+  </div>
+</section>
