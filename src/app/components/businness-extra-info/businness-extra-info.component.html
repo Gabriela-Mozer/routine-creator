@@ -9,13 +9,23 @@
     Save
   </button>
   <div class="extra-hobbies-checkboxes">
+    <div class="extra-hobbies-information">You must choose max 3 options!</div>
     <form [formGroup]="clickForm" class="list">
-        <div formArrayName="myArray">
-          <div *ngFor="let control of arrayControls; let i = index">
-            <input type="checkbox" [formControlName]="i" />
-            <label> {{ checkboxLabels[i] }} </label>
-          </div>
+      <div formArrayName="myArray">
+        <div class="checkbox-container" *ngFor="let option of checkboxLabels; let i = index">
+          <input class="checkbox-image" type="checkbox" [formControlName]="i" />
+          <img
+            [src]="option.imageSrc"
+            alt="{{ option.label }}"
+            width="32"
+            height="32"
+          />
+          <label class="extra-bussiness-labels">
+           {{ option.label }}
+          </label>
         </div>
-      </form>
+      </div>
+    </form>
   </div>
+  <button (click)="onSubmit()">Submit</button>
 </section>
